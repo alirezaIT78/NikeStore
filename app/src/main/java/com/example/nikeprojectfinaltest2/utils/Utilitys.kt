@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.res.Resources
 import android.net.Uri
 import android.util.DisplayMetrics
+import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import androidx.browser.customtabs.CustomTabsIntent
@@ -25,6 +26,7 @@ fun convertDpToPixel(dp: Float, context: Context?): Float {
 }
 fun openUrlInCustomTab (context: Context, url: String) {
     try {
+        Log.i("uriBank", "openUrlInCustomTab: "+url)
         val uri = Uri.parse(url)
         val intentBuilder = CustomTabsIntent.Builder()
         intentBuilder.setStartAnimations(context,android.R.anim.fade_in, android.R.anim.fade_out)
