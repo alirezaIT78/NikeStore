@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/empty_StateLayout"
+    android:translationZ="12sp"
+    android:background="?colorSurface">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center_vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:src="@drawable/empty_cart2"
+        android:id="@+id/imgEmptyState"
+        android:layout_marginStart="4sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceHeadline6"
+        android:id="@+id/txt_emptyCart"
+        android:text="@string/emptyCart"
+        android:layout_marginTop="16sp"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:textAppearance="?textAppearanceHeadline6"
+        android:text="@string/emptyCartLoginBtn"
+        app:cornerRadius="8sp"
+        android:paddingTop="8sp"
+        android:paddingBottom="8sp"
+        android:visibility="gone"
+        android:id="@+id/btn_emptyCartLogin"/>
+</LinearLayout>
+</FrameLayout>

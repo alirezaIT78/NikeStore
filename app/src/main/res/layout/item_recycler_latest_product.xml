@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="176sp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4sp"
+    android:layout_marginEnd="4sp"
+    android:layoutDirection="rtl"
+    android:paddingBottom="12sp"
+    android:textDirection="rtl">
+
+    <com.example.nikeprojectfinaltest2.view.NikeImageView
+        android:id="@+id/img_product_latest"
+        android:layout_width="0dp"
+        android:layout_height="189sp"
+        app:roundedCornerRadius="12sp"
+        android:contentDescription="@string/imageProductString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       />
+
+    <ImageView
+        android:id="@+id/img_favorite"
+        android:layout_width="32sp"
+        android:layout_height="32sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8sp"
+        android:background="@drawable/background_favorite"
+        android:scaleType="center"
+        android:src="@drawable/ic_favorites"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_title_latest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        tools:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_product_latest"
+        android:textAppearance="?textAppearanceHeadline6"
+        android:maxLines="2"
+        android:minLines="2"
+        android:ellipsize="start"/>
+
+    <TextView
+        android:id="@+id/txt_new_price_latest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        tools:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAppearance="?textAppearanceBody1"
+        android:ellipsize="start"
+        app:layout_constraintTop_toBottomOf="@+id/txt_old_price_latest" />
+
+    <TextView
+        android:id="@+id/txt_old_price_latest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="?android:textColorSecondary"
+        android:layout_marginTop="8dp"
+        tools:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:ellipsize="start"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title_latest" />
+</androidx.constraintlayout.widget.ConstraintLayout>

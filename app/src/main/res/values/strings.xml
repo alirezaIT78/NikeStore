@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">NikeProjectFinalTest2</string>
+    <string name="homePage">خانه</string>
+    <string name="cartPage">سبدخرید</string>
+    <string name="profilePage">اطلاعات کاربری</string>
+    <string name="et_search">جستجو</string>
+    <string name="latest_product">جدیدترین محصولات</string>
+    <string name="imageProductString">تصویر محصول</string>
+    <string name="popularProduct">محبوب ترین محصولات</string>
+    <string name="view_more">مشاهده همه</string>
+    <string name="product_details">کفش نایکی کفش روزمره مردانه  بسیار سبک و دارای کفی طبی مناسب برای پیاده روی و استفاده روزمره می باشد که زیره آن به وسیله تزریق مستقیم پی یو و دورنگ با کیفیت و رویه آن از جنس سوپر راشل می باشد همراه با منافظی که قابلیت گردش هوا را افزایش داده است.</string>
+    <string name="add_comment">ثبت نظر</string>
+    <string name="viewAllComment">مشاهده همه نظرات</string>
+    <string name="userComment"> نظرات کاربران</string>
+    <string name="sort">مرتب سازی</string>
+    <string name="sortByLatestProduct">جدیدترین</string>
+    <string name="sortByPopProduct">محبوب ترین</string>
+    <string name="sortByPriceHighToLow">گران ترین</string>
+    <string name="sortByPriceLowToHigh">ارزان ترین</string>
+    <string-array name="arraySort">
+        <item>@string/sortByLatestProduct</item>
+        <item>@string/sortByPopProduct</item>
+        <item>@string/sortByPriceHighToLow</item>
+        <item>@string/sortByPriceLowToHigh</item>
+    </string-array>
+    <string name="addToCart">افزودن به سبدخرید</string>
+    <string name="addToCartIsComplete">به سبدخرید اضافه شد</string>
+    <string name="unKnownError">خطای نامشخص</string>
+    <string name="loginToAccount">ورود به حساب کاربری</string>
+    <string name="enter_email_pass">ایمیل و رمزعبور خود را وارد کنید</string>
+    <string name="email">ایمیل</string>
+    <string name="createAccount">ایجاد حساب کاربری</string>
+    <string name="doYouHaveAccount">حساب کاربری دارید؟</string>
+    <string name="pass">رمزعبور</string>
+    <string name="notSighUp">حساب کاربری ندارید؟</string>
+    <string name="singUp">ثبت نام</string>
+    <string name="login">ورود</string>
+    <string name="cart">سبد خرید</string>
+    <string name="count">تعداد</string>
+    <string name="totalPrice">مبلغ کل خرید:</string>
+    <string name="payablePrice">مبلغ قابل پرداخت:</string>
+    <string name="shippingCast">هزینه ارسال:</string>
+    <string name="purchaseDetail">جزئیات خرید</string>
+    <string name="falseInfo">اطلاعات وارد شده اشتباه است!</string>
+    <string name="purchase">خرید</string>
+    <string name="tryAgain">دوباره تلاش کن!</string>
+    <string name="emptyCart">سبد خرید شما خالیه!</string>
+    <string name="emptyCartLogin">اول برو وارد حساب کاربریت شو</string>
+    <string name="emptyCartLoginBtn">ورود به حساب کاربری</string>
+    <string name="name">نام:</string>
+    <string name="Fname">نام خانوادگی:</string>
+    <string name="address">آدرس:</string>
+    <string name="postalCode">کدپستی:</string>
+    <string name="phoneNumber">تلفن همراه:</string>
+    <string name="payDelivery">پرداخت در محل</string>
+    <string name="onlinePay">پرداخت اینترنتی</string>
+    <string name="shippingToolbarTitle">اطلاعات تحویل گیرنده و شیوه پرداخت</string>
+    <string name="Helper_name">نام تحویل گیرنده محصول را وارد کنید</string>
+    <string name="HelperFname">نام خانوادگی تحویل گیرنده محصول را وارد کنید</string>
+    <string name="Helper_address">آدرس خود را وارد کنید</string>
+    <string name="Helper_postalCode">کدپستی آدرس خود را وارد کنید</string>
+    <string name="Helper_phoneNumber">تلفن همراه تحویل گیرنده را وارد کنید</string>
+    <string name="paymentReceipt">رسید پرداخت</string>
+    <string name="paymentSuccess"> پرداخت موفق</string>
+    <string name="paymentUnSuccess">پرداخت ناموفق</string>
+    <string name="paymentSave">سفارش شما ثبت شد</string>
+    <string name="paymentStatus">وضعیت سفارش :</string>
+    <string name="paymentPrice">مبلغ کل سفارش :</string>
+    <string name="backToHome">بازگشت به صفحه اصلی</string>
+    <string name="payHistory">سوابق سفارش</string>
+    <string name="TanksForBuying">با تشکر از خرید شما</string>
+    <string name="inProcess">در حال پردازش</string>
+    <string name="favoriteList">لیست علاقه مندی ها</string>
+    <string name="exitAccount">خروج ار حساب کاربری</string>
+    <string name="info_favorite">برای حذف محصول انگشتتان را روی سطل زباله نگهدارید</string>
+    <string name="empty_favorite">هنوز محصولی به لیست علاقه مندی هات اضافه نکردی!</string>
+    <string name="orderId">شناسه سفارش</string>
+    <string name="paymentAmount">مبلغ سفارش</string>
+    <string name="yourComment">دیدگاه شما</string>
+    <string name="myComment">دیدگاه من:</string>
+    <string name="titleComment">عنوان:</string>
+</resources>

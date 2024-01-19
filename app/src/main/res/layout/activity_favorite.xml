@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    tools:context=".feucher.favorite.FavoriteActivity">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorSurface">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favoriteList"
+            android:textAppearance="?textAppearanceHeadline6" />
+
+        <ImageView
+            android:id="@+id/btn_back_favorite"
+            android:layout_width="32sp"
+            android:layout_height="32sp"
+            android:layout_marginEnd="8sp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_width="32sp"
+            android:layout_height="32sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16sp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/info_black"
+            android:id="@+id/btn_info"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+</com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_favorite"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginTop="8sp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

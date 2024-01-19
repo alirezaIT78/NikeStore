@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="176sp"
+    android:layoutDirection="rtl"
+    android:layout_marginStart="4sp"
+    android:layout_marginEnd="4sp"
+    android:textDirection="rtl"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12sp">
+
+    <TextView
+        android:id="@+id/txt_title_pop"
+        android:layout_width="0dp"
+        android:textAppearance="?textAppearanceHeadline6"
+        android:maxLines="2"
+        android:minLines="2"
+        android:ellipsize="start"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_product_pop"
+        android:layout_marginTop="2sp"
+        tools:text="TitlePrice" />
+
+    <TextView
+        android:id="@+id/txt_old_price_pop"
+        android:ellipsize="start"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="?android:textColorSecondary"
+        android:layout_marginTop="4sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title_pop"
+        tools:text="oldPrice" />
+
+    <TextView
+        android:textAppearance="?textAppearanceBody1"
+        android:ellipsize="start"
+        android:id="@+id/txt_new_price_pop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_old_price_pop"
+        tools:text="NewPrice" />
+
+    <com.example.nikeprojectfinaltest2.view.NikeImageView
+        android:id="@+id/img_product_pop"
+        android:layout_width="0dp"
+        android:layout_height="189sp"
+        app:roundedCornerRadius="12sp"
+        android:contentDescription="@string/imageProductString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:scaleType="center"
+        android:id="@+id/img_favorite"
+        android:background="@drawable/background_favorite"
+        android:layout_width="32sp"
+        android:layout_height="32sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_favorites" />
+</androidx.constraintlayout.widget.ConstraintLayout>

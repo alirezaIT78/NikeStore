@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource"
+    app:cardCornerRadius="8sp"
+    app:cardElevation="4sp"
+    android:layout_marginTop="4sp"
+    android:layout_marginBottom="4sp"
+    android:layout_marginStart="8sp"
+    android:layout_marginEnd="8sp"
+     >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.example.nikeprojectfinaltest2.view.NikeImageView
+            android:id="@+id/img_productCart"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txt_productTitle_cart"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:textAppearance="?textAppearanceHeadline6"
+            app:layout_constraintBottom_toBottomOf="@+id/img_productCart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_productCart"
+            app:layout_constraintTop_toTopOf="@+id/img_productCart"
+            tools:text="نام محصول" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:text="@string/count"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?android:textColorSecondary"
+            app:layout_constraintEnd_toEndOf="@+id/img_productCart"
+            app:layout_constraintStart_toStartOf="@+id/img_productCart"
+            app:layout_constraintTop_toBottomOf="@+id/img_productCart" />
+
+        <TextView
+            android:id="@+id/txt_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:gravity="center"
+            android:textAppearance="?textAppearanceHeadline6"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:text="۴" />
+
+        <ImageView
+            android:id="@+id/img_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="?selectableItemBackgroundBorderless"
+
+            android:src="@drawable/ic_plusplus_square"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_count"
+            app:layout_constraintStart_toEndOf="@+id/txt_count"
+            app:layout_constraintTop_toTopOf="@+id/txt_count" />
+
+        <ImageView
+            android:id="@+id/img_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_mines_square"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_count"
+            app:layout_constraintEnd_toStartOf="@+id/txt_count"
+            app:layout_constraintTop_toTopOf="@+id/txt_count"
+            tools:ignore="MissingConstraints" />
+
+        <ProgressBar
+            android:id="@+id/progress_cartItemCount"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_count"
+            app:layout_constraintEnd_toStartOf="@+id/img_increase"
+            app:layout_constraintStart_toEndOf="@+id/img_decrease"
+            app:layout_constraintTop_toTopOf="@+id/txt_count"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/old_price_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingEnd="16sp"
+            android:textAppearance="?textAppearanceBody2"
+            android:textColor="?android:textColorSecondary"
+            app:layout_constraintBottom_toTopOf="@+id/new_price_cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="۱,۶۰۰,۰۰۰" />
+
+        <TextView
+            android:id="@+id/new_price_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingEnd="16sp"
+            android:textAppearance="?textAppearanceBody1"
+            app:layout_constraintBottom_toBottomOf="@+id/img_increase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/old_price_cart"
+            app:layout_constraintTop_toBottomOf="@+id/old_price_cart"
+            tools:text="۱,۴۰۰,۰۰۰" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0sp"
+            android:layout_height="1sp"
+            android:background="?dividerColorMy"
+            app:layout_constraintBottom_toTopOf="@+id/frame_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <FrameLayout
+            android:id="@+id/frame_delete"
+            android:layout_width="match_parent"
+            android:layout_height="52sp"
+            android:layout_marginTop="16dp"
+            android:background="?selectableItemBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_increase">
+
+            <ImageView
+                android:id="@+id/img_remove_cart"
+                android:layout_width="42sp"
+                android:layout_height="42sp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_delete_outline_24" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

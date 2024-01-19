@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:textDirection="rtl"
+    android:layoutDirection="rtl"
+    app:cardElevation="4sp"
+    app:cardCornerRadius="8sp"
+    app:cardUseCompatPadding="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <com.example.nikeprojectfinaltest2.view.NikeImageView
+        android:id="@+id/img_favoriteProduct"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundedCornerRadius="9sp" />
+
+    <TextView
+        android:id="@+id/txt_favoriteProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="?textAppearanceHeadline6"
+        app:layout_constraintBottom_toBottomOf="@+id/img_favoriteProduct"
+        app:layout_constraintEnd_toStartOf="@+id/frame_deleteFavorite"
+        app:layout_constraintStart_toEndOf="@+id/img_favoriteProduct"
+        app:layout_constraintTop_toTopOf="@+id/img_favoriteProduct"
+        tools:text="@string/favoriteList" />
+
+    <FrameLayout
+        android:id="@+id/frame_deleteFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="2sp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4sp"
+            android:layout_marginBottom="4sp"
+            android:layout_gravity="start"
+            android:background="?dividerColorMy" />
+
+        <ImageView
+            android:layout_width="32sp"
+            android:layout_height="32sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:src="@drawable/baseline_delete_outline_24" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bottom_nav_style" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/color_bottom_nav</item>
+        <item name="itemTextColor">@color/color_bottom_nav</item>
+        <item name="itemRippleColor">@color/color_ripple_bottom_nav</item>
+    </style>
+    <style name="matrieal_buttom" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="rippleColor">@color/color_ripple_bottom_nav</item>
+    </style>
+    <style name="Theme.auth.Edit" parent="Base.Theme.NikeProjectFinalTest2">
+        <item name="android:textColorHint">#48ffffff</item>
+        <item name="cornerRadius">8sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+        <item name="android:minHeight">48sp</item>
+        <item name="android:paddingStart">16sp</item>
+        <item name="android:paddingEnd">16sp</item>
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+    </style>
+    <style name="Theme.auth.BtnLogin">
+        <item name="cornerRadius">8sp</item>
+        <item name="rippleColor">@color/gray</item>
+        <item name="backgroundTint">?colorOnSurface</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+    </style>
+    <style name="TextInputL" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">16sp</item>
+        <item name="android:layout_marginEnd">16sp</item>
+        <item name="android:layout_marginTop">12sp</item>
+        <item name="helperTextTextColor">?colorPrimary</item>
+        <item name="helperTextTextAppearance">?textAppearanceBody2</item>
+    </style>
+    <style name="TextInputEt" parent="ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+        <item name="paddingStart">8sp</item>
+        <item name="paddingEnd">8sp</item>
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="hintTextAppearance">?textAppearanceBody2</item>
+    </style>
+    <style name="Avatar">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="itemProfile">
+        <item name="android:minHeight">46sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:paddingStart">16sp</item>
+        <item name="android:drawablePadding">12sp</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>
